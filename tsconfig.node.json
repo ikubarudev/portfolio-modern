@@ -7,6 +7,9 @@
     "nightwatch.conf.*",
     "playwright.config.*"
   ],
+  "exclude": [
+    "vite.config.ts.timestamp-*"
+  ],
   "compilerOptions": {
     "composite": true,
     "noEmit": true,
