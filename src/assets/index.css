@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+a.router-link-active {
+    @apply transition-colors duration-200 bg-transparent bg-lightTheme text-lightTheme bg-opacity-80 rounded-md
+}
+
+.router-link-hover {
+    @apply cursor-pointer transition-colors duration-200 bg-transparent hover:bg-lightTheme hover:text-lightTheme hover:bg-opacity-80 rounded-md
+}
+
+.contact-button {
+    @apply h-10 w-28 rounded-xl font-semibold text-sm
+}
+
+.getintouch-button-hover {
+    @apply hover:text-darkTheme hover:bg-darkTheme border duration-200
+}
+
+.resume-button-hover {
+    @apply hover:text-lightTheme hover:bg-lightTheme duration-200 hover:border-none
+}
+
+.opacity-hover {
+    @apply hover:opacity-70 cursor-pointer duration-200
+}
+
+.fade-enter-active, .fade-leave-active {
+    transition: opacity 0.5s ease-in-out;
+  }
+  .fade-enter, .fade-leave-to /* .fade-leave-active in <2.1.8 */ {
+    opacity: 0;
+  }
